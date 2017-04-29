@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "\n# This is the server logic for a Shiny web application.\n# You can find out more about building applications with Shiny here:\n#\n# http://shiny.rstudio.com\n#\n\nlibrary(shiny)\n\nshinyServer(function(input, output) {\n  output$plot <- renderPlot({hist(rnorm(input$N), breaks = input$M, main=input$text, xlab = input$x_akseli)})\n  \n  \n})\n",
+    "created" : 1493504272554.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2617902821",
+    "id" : "4115CB35",
+    "lastKnownWriteTime" : 1493505509,
+    "last_content_update" : 1493505509417,
+    "path" : "~/ShinyDEMO/ShinyDEMO/server.R",
+    "project_path" : "server.R",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
